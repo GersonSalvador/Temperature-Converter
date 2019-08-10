@@ -18,7 +18,7 @@ function celciusToFahrenheightAndKelvin()
 
     var ktemp= ctemp + 273.5;
 
-    farenheightInput.value=roundnum(ftemp);
+    fahrenheitInput.value=roundnum(ftemp);
     kelvinInput.value=roundnum(ktemp);
 }
 
@@ -43,14 +43,14 @@ function kelvinToCelciusAndFarenheight()
     var ftemp=(ktemp-273.5)*(9/5)+32;
 
     celciusInput.value=roundnum(ctemp);
-    farenheightInput.value=roundnum(ftemp);
+    fahrenheitInput.value=roundnum(ftemp);
 
     
 }
 function main()
 {
     celciusInput.addEventListener('input',celciusToFahrenheightAndKelvin);
-    farenheightInput.addEventListener('input',farenheightToCelciusAndKelvin);
+    fahrenheitInput.addEventListener('input',farenheightToCelciusAndKelvin);
     kelvinInput.addEventListener('input',kelvinToCelciusAndFarenheight);
 
 }
