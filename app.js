@@ -2,7 +2,7 @@ console.log("@sandeepnegi1996");
 
 
 var celciusInput= document.querySelector("#celcius>input");
-var farenheightInput=document.querySelector("#farhenheight>input");
+var fahrenheitInput=document.querySelector("#fahrenheit>input");
 var kelvinInput=document.querySelector("#kelvin>input");
 
 function roundnum(num)
