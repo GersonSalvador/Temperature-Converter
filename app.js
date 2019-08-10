@@ -12,38 +12,38 @@ function roundnum(num)
 
 function celciusToFahrenheightAndKelvin()
 {
-    var ctemp=parseFloat(celciusInput.value);
+    var ctemp=parseFloat(celciusInput.value)+" °C";
 
     var ftemp= (ctemp*(9/5)) + 32;
 
     var ktemp= ctemp + 273.5;
 
-    farenheightInput.value=roundnum(ftemp);
-    kelvinInput.value=roundnum(ktemp);
+    farenheightInput.value=roundnum(ftemp)+" °F";
+    kelvinInput.value=roundnum(ktemp)+" K";
 }
 
 //farenheight to celcius and kelvin function
 function farenheightToCelciusAndKelvin() 
 {
     
-    var ftemp= parseFloat(farenheightInput.value);
+    var ftemp= parseFloat(farenheightInput.value)+" °F";
     var ccel=(ftemp-32)*(5/9);
     var ktemp=(ftemp + 459.67)*(5/9);
 
-    celciusInput.value=roundnum(ccel);
-    kelvinInput.value=roundnum(ktemp);
+    celciusInput.value=roundnum(ccel)+" °C";
+    kelvinInput.value=roundnum(ktemp)+" K";
 }
 
 //kelvin to celcius and farenheight
 
 function kelvinToCelciusAndFarenheight() 
 {
-    var ktemp= parseFloat(kelvinInput.value);
+    var ktemp= parseFloat(kelvinInput.value) +" K";
     var ctemp= ktemp-273.5;
     var ftemp=(ktemp-273.5)*(9/5)+32;
 
-    celciusInput.value=roundnum(ctemp);
-    farenheightInput.value=roundnum(ftemp);
+    celciusInput.value=roundnum(ctemp)+" °C";
+    farenheightInput.value=roundnum(ftemp)+" °F";
 
     
 }
