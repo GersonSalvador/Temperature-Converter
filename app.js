@@ -42,7 +42,6 @@ function kelvinToCelciusAndFarenheight()
     var ctemp= ktemp-273.5;
     var ftemp=(ktemp-273.5)*(9/5)+32;
 
-
     celciusInput.value=roundnum(ctemp)+" °C";
     farenheightInput.value=roundnum(ftemp)+" °F";
 
@@ -51,7 +50,7 @@ function kelvinToCelciusAndFarenheight()
 function main()
 {
     celciusInput.addEventListener('input',celciusToFahrenheightAndKelvin);
-    fahrenheitInput.addEventListener('input',farenheightToCelciusAndKelvin);
+    farenheightInput.addEventListener('input',farenheightToCelciusAndKelvin);
     kelvinInput.addEventListener('input',kelvinToCelciusAndFarenheight);
 
 }
